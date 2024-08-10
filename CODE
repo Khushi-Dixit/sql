@@ -1,0 +1,9 @@
+show databases();
+create database employee;
+use employee;
+select database employee;
+
+TABLE- 
+create table employers (name varchar(30), number int);
+show tables;
+desc employers;
