@@ -1,5 +1,4 @@
-# sql
-Here's a draft for a README file for your SQL journey:
+# SQL
 
 ---
 
