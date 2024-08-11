@@ -8,6 +8,10 @@ create table employers (name varchar(30), number int);
 show tables;
 desc employers;
 
+UPDATE Employees
+SET Salary = 75000
+WHERE EmployeeID = 1;
+
 SELECT DepartmentID, COUNT(*) AS EmployeeCount, AVG(Salary) AS AvgSalary
 FROM Employees
 GROUP BY DepartmentID;
