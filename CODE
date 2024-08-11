@@ -8,6 +8,13 @@ create table employers (name varchar(30), number int);
 show tables;
 desc employers;
 
+SELECT DepartmentID, COUNT(*) AS EmployeeCount, AVG(Salary) AS AvgSalary
+FROM Employees
+GROUP BY DepartmentID;
+
+DELETE FROM Employees
+WHERE EmployeeID = 4;
+
 SELECT FirstName, LastName
 FROM Employees
 WHERE Salary > (SELECT AVG(Salary) FROM Employees);
