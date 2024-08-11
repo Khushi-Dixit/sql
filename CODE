@@ -8,6 +8,10 @@ create table employers (name varchar(30), number int);
 show tables;
 desc employers;
 
+SELECT FirstName, LastName
+FROM Employees
+WHERE Salary > (SELECT AVG(Salary) FROM Employees);
+
 CREATE VIEW HighEarners AS
 SELECT FirstName, LastName, Salary
 FROM Employees
