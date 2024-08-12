@@ -27,6 +27,11 @@ SELECT FirstName, LastName
 FROM Employees
 WHERE Salary IS NULL;
 
+SELECT *
+FROM Employees
+WHERE (Salary > 75000) IS TRUE;
+
+
 CREATE VIEW HighEarners AS
 SELECT FirstName, LastName, Salary
 FROM Employees
