@@ -23,6 +23,10 @@ SELECT FirstName, LastName
 FROM Employees
 WHERE Salary > (SELECT AVG(Salary) FROM Employees);
 
+SELECT FirstName, LastName
+FROM Employees
+WHERE Salary IS NULL;
+
 CREATE VIEW HighEarners AS
 SELECT FirstName, LastName, Salary
 FROM Employees
