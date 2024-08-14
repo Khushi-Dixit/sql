@@ -37,8 +37,7 @@ SELECT FirstName, LastName, Salary
 FROM Employees
 WHERE Salary > 75000;
 
-CREATE VIEW HighEarners AS
-SELECT FirstName, LastName, Salary
+SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
 FROM Employees
-WHERE Salary > 75000;
+INNER JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;
 
